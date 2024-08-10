@@ -1,0 +1,60 @@
+
+assignment_2
+  
+
+inner join= 35 rows
+left join= 36 rows
+right join = 37 rows
+full outer join= 38 rows
+
+11) Display the names of employees who are working as clerks, salesman or  analyst and drawing a salary more than 3000. 
+    
+    select first_name from employees where department_id in (9, 6, 5) and salary > 3000
+
+12) Display the names of the employees who are working in the company for  the past 5 years.
+
+     SELECT first_name, hire_date FROM employees WHERE hire_date >= add_months(current_date, -12*5);
+
+     select first_name, hire_date from employees where hire_date >= TO_DATE('01-01-2020','dd-mm-yyyy')
+
+13) Display the list of employees who have joined the company before 30-JUN-90 or after 31-DEC-90. 
+    
+    select first_name from employees where hire_date < to_date('30-06-1990','dd-mm-yyyy') or hire_date > to_date('31-12-1990','dd-mm-yyyy') 
+
+14) Display current Date.
+
+    select current_date from dual
+
+15) Display the list of all users in your database (use catalog table). 
+
+     show users
+
+16) Display the names of all tables from current user; 
+
+    show tables
+
+17) Display the name of the current user. 
+
+    show databases
+
+18) Display the names of employees working in depart number 10 or 20 or 40 or employees working as CLERKS,SALESMAN or ANALYST. 
+
+    select first_name  from employees where department_id in(6,5,3) 
+
+19) Display the names of employees whose name starts with alaphabet S. 
+
+    select first_name from employees where first_name like 'S%'
+
+20)Display the Employee names for employees whose name ends with alaphabet S.
+
+   select first_name from employees where first_name like '%S'
+
+       
+
+       
+
+
+
+
+
+  

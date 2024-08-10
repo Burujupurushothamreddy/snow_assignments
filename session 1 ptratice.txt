@@ -1,0 +1,7 @@
+1: regions-     2columns,  4rows
+2: countries_   3columns,  25 rows
+3: locations_   6columns,  7 rows
+4: jobs_        4columns,  19 rows
+5: departments_ 3columns,  11 rows
+6: employees_   10columns, 40 rows
+7: dependents_  5columns,  30rows
